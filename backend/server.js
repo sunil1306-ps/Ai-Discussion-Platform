@@ -17,7 +17,7 @@ const port = 3000;
 const db_string = "mongodb+srv://sunil:mangomango@cluster0.dsa6r.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 const MISTRAL_API_URL = "https://api.mistral.ai/v1/chat/completions";
 const MISTRAL_API_KEY = process.env.MISTRAL_API_KEY;
-const genAI = new GoogleGenerativeAI("AIzaSyBrTs-P5BqW1mkGMlJZYLbuMe_7OY_TfUE");
+const genAI = new GoogleGenerativeAI("Google API Key");
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
 
 const prompt = `You are an AI assistant specializing in providing helpful, well-structured answers based on insights from developer and community-driven platforms like Stack Overflow, Reddit, and Quora. When answering, adapt your response based on the type of question:
